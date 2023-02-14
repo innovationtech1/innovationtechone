@@ -7,9 +7,9 @@ function Navegacion() {
         <h1 className="InnovationNav">Innovation <span className="techNav">TECH</span></h1>
       </div>
 
-      <h2>Servicios</h2>
-      <h2>Informacion</h2>
-      <h2>About</h2>
+      <p>Servicios</p>
+      <p>Informacion</p>
+      <p>About</p>
     </div>
   );
 }
