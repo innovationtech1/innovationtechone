@@ -1,20 +1,25 @@
-import { useState } from 'react'
-import './App.css'
-import Navegacion from './components/Navegacion'
-import Slider from './components/Slider'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home"
+import About from "./pages/About"
+import Informacion from "./pages/Informacion"
+import Servicios from "./pages/Servicios"
+import NotFoundPage from "./pages/NotFoundPage"
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-     
-      <Navegacion className=""/>    
-    <Slider/>
-        
-      
+      <BrowserRouter>
+        <Routes>
+          <Route path="/innovationtechone" element={<Home />} />
+          <Route path="/innovationtechone/servicios" element={<Servicios />} />
+          <Route path="/innovationtechone/informacion" element={<Informacion />} />
+          <Route path="/innovationtechone/about" element={<About />} />
+          <Route path="/nnovationtechone/notFoundPage" element={<NotFoundPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

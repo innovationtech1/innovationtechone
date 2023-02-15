@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import "../App.css";
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-
+import '../App.css'
 import logo from "../assets/img/logo.png"
 
 
@@ -19,7 +19,7 @@ function Navegacion() {
     <div className="navContainer">
       <div className="titleContainer">
 
-        <h1 className="innovationNav"><img className='logoImg' src={logo}alt="lg"  />Innovation <span className="techNav">TECH</span></h1>
+        <h1 className="innovationNav"><img className='logoImg' src={logo}alt="lg"  />INNOVATION <span className="techNav">TECH</span></h1>
          <i className='menuBurger'> <FontAwesomeIcon icon={faBars} />
           <button onClick={handleClick}
             className="opacity-btn">
@@ -29,9 +29,11 @@ function Navegacion() {
       </div>
       {showMenu && (
         <div className="menuContainer">
-          <a href="/"><p>Servicios</p></a>
-          <a href="/"> <p>Informacion</p></a>
-           <a href="/"> <p>About</p></a>
+          <NavLink to="/innovationtechone/"><p>Home</p></NavLink>
+          <NavLink to="/innovationtechone/servicios"><p>Servicios</p></NavLink>
+          <NavLink to="/innovationtechone/informacion"><p>Informacion</p></NavLink>
+           <NavLink to="/innovationtechone/about"><p>About</p></NavLink>
+       
          
         </div>
       )}

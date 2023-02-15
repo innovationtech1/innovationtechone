@@ -12,7 +12,7 @@ body {
 .menuContainer {
     background: rgb(0, 0, 0);
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(9, 9, 121, 1) 22%, rgba(0, 48, 255, 0.8268287866137178) 81%, rgba(13, 52, 228, 1) 99%, rgba(239, 239, 241, 0.8268287866137178) 100%);
-    height: 120px;
+    height: 150px;
 }
 
 .menuContainer a {
@@ -70,7 +70,7 @@ body {
 }
 
 .innovationNav {
-    color: red;
+    color: rgb(255, 255, 255);
     animation: text ease alternate-reverse infinite;
     animation-duration: 10s;
     animation-fill-mode: forwards;
@@ -96,7 +96,7 @@ body {
 }
 
 .techNav {
-    color: whitesmoke;
+    color: rgb(194, 0, 0);
 }
 
 .menuBurger {
@@ -182,4 +182,13 @@ body {
     100% {
         left: -400%;
     }
+}
+
+.footerContainer {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(9, 9, 121, 1) 22%, rgba(0, 48, 255, 0.8268287866137178) 81%, rgba(13, 52, 228, 1) 99%, rgba(239, 239, 241, 0.8268287866137178) 100%);
+    height: 160px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
