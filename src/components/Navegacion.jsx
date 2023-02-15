@@ -17,13 +17,13 @@ function Navegacion() {
 
   return (
     <div className="navContainer">
-      <img className='logoImg' src={logo}alt="lg"  />
       <div className="titleContainer">
-        <h1 className="innovationNav">Innovation <span className="techNav">TECH</span></h1>
 
-         <i className='menu-btn'> <FontAwesomeIcon icon={faBars} />
-        <button onClick={handleClick} className="opacity-btn">
-          {showMenu ? '' : ''}
+        <h1 className="innovationNav"><img className='logoImg' src={logo}alt="lg"  />Innovation <span className="techNav">TECH</span></h1>
+         <i className='menuBurger'> <FontAwesomeIcon icon={faBars} />
+          <button onClick={handleClick}
+            className="opacity-btn">
+          {showMenu ? 'menu' : 'close'}
         </button>
         </i>
       </div>
