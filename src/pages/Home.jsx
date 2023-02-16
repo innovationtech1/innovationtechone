@@ -4,11 +4,11 @@ import logo from "../assets/img/logo.png";
 import Slider from "../components/Slider";
 import Navegacion from "../components/Navegacion";
 import Footer from "../components/footer";
+import BotonAnimado from "../components/BotonAnimado";
 
 import { useState, useEffect } from "react";
-import Card from "../components/Card";
 
-export function MiComponente() {
+export function ContadorBtn() {
   const [contador, setContador] = useState(() => {
     const storedValue = localStorage.getItem("contador");
     return storedValue !== null ? parseInt(storedValue) : 117;
@@ -27,24 +27,6 @@ export function MiComponente() {
     </div>
   );
 }
-export function Contenido() {
-  const [mostrarContenido, setMostrarContenido] = useState(false);
-
-  const handleClick = () => {
-    setMostrarContenido(!mostrarContenido);
-  };
-
-  return (
-    <div>
-      <button className="mostrarContenidoBtn" onClick={handleClick}>
-        {mostrarContenido ? "Ocultar contenido" : "Mostrar contenido"}
-      </button>
-      {mostrarContenido && (
-       <Card/>
-      )}
-    </div>
-  );
-}
 
 function Home() {
   return (
@@ -55,11 +37,17 @@ function Home() {
         <p>Actualizando componentes</p>
         <h3>Creando Tecnologia</h3>
       </div>
-      <MiComponente />
+      <ContadorBtn />
 
-      <Contenido />
+      <BotonAnimado />
 
       <img className="logo" src={logo} alt="logo" />
+      <br />
+
+      <div className="video">
+
+      <iframe className="video"  src="https://www.youtube.com/embed/XKnkh047ieo" title="INNOVATIONTECH" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
 
       <Footer />
     </div>
