@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div>
       <Navegacion />
-      <div>About</div>
+      <h3 className="pageTitle">About</h3>
     </div>
   );
 }

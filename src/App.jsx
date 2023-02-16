@@ -6,6 +6,11 @@ import Servicios from "./pages/Servicios"
 import NotFoundPage from "./pages/NotFoundPage"
 import "./App.css";
 
+
+
+
+
+
 function App() {
   return (
     <div className="App">
@@ -15,7 +20,7 @@ function App() {
           <Route path="/innovationtechone/servicios" element={<Servicios />} />
           <Route path="/innovationtechone/informacion" element={<Informacion />} />
           <Route path="/innovationtechone/about" element={<About />} />
-          <Route path="/nnovationtechone/notFoundPage" element={<NotFoundPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -29,10 +29,10 @@ function Navegacion() {
       </div>
       {showMenu && (
         <div className="menuContainer">
-          <NavLink to="/innovationtechone/"><p>Home</p></NavLink>
-          <NavLink to="/innovationtechone/servicios"><p>Servicios</p></NavLink>
-          <NavLink to="/innovationtechone/informacion"><p>Informacion</p></NavLink>
-           <NavLink to="/innovationtechone/about"><p>About</p></NavLink>
+          <NavLink className="active" to="/innovationtechone/"><p>Home</p></NavLink>
+          <NavLink className="active" to="/innovationtechone/servicios"><p>Servicios</p></NavLink>
+          <NavLink className="active" to="/innovationtechone/informacion"><p>Informacion</p></NavLink>
+           <NavLink className="active" to="/innovationtechone/about"><p>About</p></NavLink>
        
          
         </div>
