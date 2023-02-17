@@ -7,7 +7,7 @@
 body {
     background-color: rgb(0, 0, 0);
     color: whitesmoke;
-    height: 1450px;
+    margin-bottom: 400px;
 }
 
 .navContainer {
@@ -183,10 +183,19 @@ body {
 .footerContainer {
     background: rgb(0, 0, 0);
     background: linear-gradient( 180deg, rgba(0, 0, 0, 1) 0%, rgba(9, 9, 121, 1) 22%, rgba(0, 48, 255, 0.8268287866137178) 81%, rgba(13, 52, 228, 1) 99%, rgba(239, 239, 241, 0.8268287866137178) 100%);
-    height: 100px;
+    height: 180px;
     width: 100%;
+    color: whitesmoke;
     position: fixed;
     bottom: 0px;
+}
+
+.redesSociales {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 25px;
+    padding-top: 10px;
 }
 
 
@@ -220,17 +229,16 @@ body {
     padding: 2px;
     text-align: center;
     box-sizing: content-box;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-top: 30px;
-    margin-bottom: 20px;
     background: linear-gradient( 180deg, rgba(0, 0, 0, 1) 0%, rgba(9, 9, 121, 1) 22%, rgba(0, 48, 255, 0.8268287866137178) 81%, rgba(13, 52, 228, 1) 99%, rgba(239, 239, 241, 0.8268287866137178) 100%);
     box-shadow: 2px 2px 2px 2px rgb(255, 6, 6);
 }
 
 .logo {
     width: 50%;
-    margin-top: 20px;
+    margin-bottom: 40px;
     text-align: center;
     align-items: center;
     margin-left: 27%;
@@ -268,6 +276,7 @@ body {
 .likesBtn {
     background: linear-gradient( 180deg, rgba(0, 0, 0, 1) 0%, rgba(9, 9, 121, 1) 22%, rgba(0, 48, 255, 0.8268287866137178) 81%, rgba(13, 52, 228, 1) 99%, rgba(239, 239, 241, 0.8268287866137178) 100%);
     border-radius: 4px;
+    text-decoration: none;
     color: #fff;
     padding: 8px 16px;
     border: 1px solid whitesmoke;
@@ -314,11 +323,11 @@ body {
 /* Estilos de tarjeta servicios */
 
 .cardConteiner {
-    margin-top: 20px;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
     animation: fade ease;
     animation-duration: 6s;
     transition: opacity 1;
@@ -334,6 +343,8 @@ body {
 }
 
 .cardBody {
+    width: 90%;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -341,9 +352,6 @@ body {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
     border: 1px solid whitesmoke;
     border-radius: 10px;
-    width: 380px;
-    height: 500px;
-    margin-top: 100px;
     background-image: url("./assets/img/fondo2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -351,7 +359,6 @@ body {
 
 .cardBody img {
     width: 100%;
-    height: 250px;
     object-fit: cover;
     border-radius: 10px;
     opacity: 0.1;
@@ -368,29 +375,108 @@ body {
         height: 0;
         transition: 1s;
         scale: 0;
+        opacity: 0;
     }
     100% {
         scale: 1;
-        height: 250px;
-        margin-top: 40px;
         opacity: 1;
     }
 }
 
 .cardTitle {
     margin: 20px 0 0 0;
-    font-size: 60px;
-    color: black;
-    text-shadow: 2px 2px 2px rgb(81, 94, 4);
+    font-size: 30px;
+    color: rgb(255, 253, 253);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0), 2px 2px 2px rgb(0, 0, 0);
     text-align: center;
 }
 
 .cardDescription {
     font-size: 20px;
     text-align: center;
-    padding: 10px;
-    color: black;
-    text-shadow: 2px 2px 2px rgb(81, 94, 4);
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px rgb(0, 0, 0), 2px 2px 2px rgb(0, 0, 0);
 }
 
-.video {}
+
+/* comienza tarjeta de servicios*/
+
+.SercardConteiner {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade ease;
+    animation-duration: 6s;
+    transition: opacity 1;
+}
+
+@keyframes fade {
+    1% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.SercardBody {
+    width: 90%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    background-image: url("./assets/img/fondo2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.SercardBody img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.1;
+    margin-top: 40px;
+    opacity: 0.8;
+    animation: animacionimagen ease alternate;
+    animation-duration: 3s;
+    transition: 1s;
+    opacity: 1;
+}
+
+.video {
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+}
+
+.precio {
+    color: rgb(255, 255, 255);
+    background-color: red;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+.cookies h1,
+h3 {
+    margin-top: 20px;
+    color: rgb(182, 10, 10);
+    padding: 5px;
+    text-align: center;
+}
+
+.cookies p {
+    color: whitesmoke;
+    padding: 3px;
+    text-align: justify;
+    margin: 4px 4px;
+}
+
+.logoCookies {
+    width: 50%;
+}

@@ -1,6 +1,6 @@
 import Navegacion from "../components/Navegacion";
 import "../App.css";
-import Card from "../components/Card";
+import ServCard from "../components/SerCard";
 
 
 export default function Servicios() {
@@ -9,8 +9,7 @@ export default function Servicios() {
       <Navegacion />
       <h3 className="pageTitle">Servicios</h3>
       <br />
-      <Card/>
-      
+      <ServCard/>      
       </div>
       
   
