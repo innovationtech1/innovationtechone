@@ -8,7 +8,7 @@ function Card() {
       <div className="SercardBody">
         <img  src={img1} alt="img" />
         <h5 className="cardTitle">Card Animation</h5>
-        <h4 className="cardDescription">Aqui la descripcion de la tarjeta</h4>
+        <h4 className="cardDescription">Aqui la descripcion de la tarjeta ideal para mostrar productos y servicios</h4>
         <p className="precio">200 dll "c/u"</p>
       
       </div>

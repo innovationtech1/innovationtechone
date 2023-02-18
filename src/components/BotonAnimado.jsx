@@ -12,7 +12,7 @@ function BotonAnimado() {
       setTimeout(() => {
         setMostrarContenido(false);
         setIsFadingOut(false);
-      }, 1000);
+      }, 0);
     } else {
       setMostrarContenido(true);
     }

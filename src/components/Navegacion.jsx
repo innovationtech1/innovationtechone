@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-import '../App.css'
+import { FaBars} from "react-icons/fa";
+
 import logo from "../assets/img/logo.png"
 
 
@@ -20,7 +19,7 @@ function Navegacion() {
       <div className="titleContainer">
 
         <h1 className="innovationNav"><img className='logoImg' src={logo}alt="lg"  />INNOVATION <span className="techNav">TECH</span></h1>
-         <i className='menuBurger'> <FontAwesomeIcon icon={faBars} />
+         <i className='menuBurger'> <FaBars/>
           <button onClick={handleClick}
             className="opacity-btn">
           {showMenu ? 'menu' : 'close'}

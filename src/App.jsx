@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route
-            path="/innovationtechone/avisocookies"
+            path="/innovationtechone/avisocookies/"
             element={<AvisoCookies />}
           />
           <Route path="/innovationtechone" element={<Home />} />

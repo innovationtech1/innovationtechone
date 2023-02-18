@@ -1,13 +1,16 @@
 import "../App.css";
 import logo from "../assets/img/logo.png";
+import { FaPhoneSquare } from "react-icons/fa";
 
 import Slider from "../components/Slider";
 import Navegacion from "../components/Navegacion";
 import Footer from "../components/footer";
 import BotonAnimado from "../components/BotonAnimado";
+import MenuCookies from "../cookies/MenuCookies";
+import NavMuestra from "../components/NavMuestra";
 
 import { useState, useEffect, useRef } from "react";
-import MenuCookies from "../cookies/MenuCookies";
+import Maps from "../components/Maps";
 
 export function ContadorBtn() {
   const [contador, setContador] = useState(() => {
@@ -59,80 +62,105 @@ function Home() {
       <div className="textContainer">
         <br />
         <br />
-        <h3>Catalogo de Componentes</h3>
-        <p>Creando Tecnologia</p>
+        <h3 className="cardTitle">Catalogo de Componentes</h3>
+        <p className="cardDescription">Creando Tecnologia</p>
         <br />
         <br />
-        <h4>Titulo y subtitulo</h4>
+        <h4 className="cardDescription">Titulo y subtitulo</h4>
         <p className="precio">$20dlls</p>
       </div>
       <div className="textContainer">
         <br />
         <br />
-        <h3>Catalogo de Componentes</h3>
-        <p>Creando Tecnologia</p>
+        <h3 className="cardTitle">Catalogo de Componentes</h3>
+        <p className="cardDescription">Creando Tecnologia</p>
         <br />
-        <br />
-        <h4>Articulos Textos Encabezados</h4>
-        <br />
-        <p>
+
+        <p className="cardDescription">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
           cupiditate ipsum, odit eaque perferendis odio accusamus deleniti sunt
           iure porro saepe quo praesentium itaque necessitatibus laboriosam
           velit aliquid non et.
         </p>
+        <br />
+        <h4 className="cardDescription"> Articulos Textos Encabezados</h4>
         <p className="precio">$40dlls</p>
       </div>
       <div className="textContainer">
         <img src={logo} alt="logo" />
-        <h4>Imagenes Logotipos Estaticos </h4>
+        <h4 className="cardDescription">Imagenes Logotipos Estaticos </h4>
         <p className="precio">$50dlls</p>
       </div>
       <div className="textContainer">
         <img className="logo" src={logo} alt="logo" />
-        <h4> Diseño y Animacion de Logotipos</h4>
+        <h4 className="cardDescription"> Diseño y Animacion de Logotipos</h4>
         <p className="precio">100dlls</p>
       </div>
       <div className="textContainer">
         <br></br>
         <ContadorBtn />
         <br></br>
-        <h4>Contador de likes</h4>
+        <h4 className="cardDescription">Contador de likes</h4>
         <p className="precio">100dlls</p>
       </div>
       <div className="textContainer">
         <br />
         <br />
         <Slider />
-        <h4>Slider Animado incluye la animacion de 4 fotografias</h4>
+        <h4 className="cardDescription">
+          Slider Animado incluye la animacion de 4 fotografias
+        </h4>
         <p className="precio">200dlls</p>
       </div>
       <div className="textContainer">
         <BotonAnimado />
         <br />
         <br />
-        <h4>Tarjeta Animada</h4>
+        <h4 className="cardDescription">Tarjeta Animada</h4>
         <p className="precio">200dlls</p>
       </div>
-
       <br />
       <div className="textContainer">
         <iframe
-         className="video"
+          className="video"
           src="https://www.youtube.com/embed/XKnkh047ieo"
           title="INNOVATIONTECH"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
+         
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         
         ></iframe>
         <br />
         <br />
-        <h4>Subir un video </h4>
+        <h4 className="cardDescription">Crear Editar Subir Un Video </h4>
         <p className="precio">150dlls</p>
       </div>
+      <div className="textContainer">
+        <NavMuestra />
+        <br />
+        <br />
+        <h4 className="cardDescription">
+          Incluir Menu desplegable a la aplicacion incluye 4 paginas extra
+        </h4>
+        <p className="precio">500dlls</p>
+      </div>
+      <div className="textContainer">
+        <Maps />
+        <br />
+        <br />
+        <h4 className="cardDescription">
+          Incluir API GOOGLEMAPS Geolozalizacion{" "}
+        </h4>
+        <p className="precio">500dlls</p>
+      </div>
 
-      <Footer />
       <MenuCookies />
+      <br /><br />
+
+  <a className="phoneSquare" href="tel:+12108102141">
+        <FaPhoneSquare />
+      </a>
+      <p className="cardDescription">Call Us</p>
+      <Footer />
     </div>
   );
 }

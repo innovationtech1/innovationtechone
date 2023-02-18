@@ -7,8 +7,12 @@ function SerCard() {
       <div className="SercardBody">
         <img  src={slider1} alt="img" />
         <h5 className="cardTitle">Desarrollo Web</h5>
-        <h4 className="cardDescription">Diseñamos tu pagina web con los componentes que tu nececites del catalogo de componentes el desarrollo tiene un costo inicial de $200 dlls de anticipo </h4>
-        <p className="precio">$200 dlls </p>
+        <h4 className="cardDescription">Diseñamos tu pagina web con los componentes que nececites del catalogo de componentes del "MENU HOME" el desarrollo tiene un costo inicial de $500dlls de anticipo mas los componentes que contrates.
+        
+        
+        </h4>
+        <p className="precio"> La construcion del sitio tiene un costo inicial de $500 dlls esto cubrira el desarrollo , hosting y el dominio  mas componentes</p>
+
       
       </div>
     </div>
