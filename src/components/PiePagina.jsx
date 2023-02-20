@@ -4,10 +4,9 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
 
-
-function Footer() {
+function PiePagina() {
   return (
-    <div className="footerContainer">
+    <div>
       <div className="redesSociales">
         <a href="https://www.facebook.com/Innovationtechsa" target="_blank">
           <h4 className="fbIcon">
@@ -28,7 +27,6 @@ function Footer() {
       <div className="textCenter">
         <div>Follow Us</div>
 
-     
         <div>
           <a
             className="mail"
@@ -40,13 +38,9 @@ function Footer() {
           </a>
           <h6>Press To Send Mail</h6>
         </div>
-        <br />
-        <h6 className="marcaRegistrada">
-          &reg;INNOVATIONTECHONE TODOS LOS DERECHOS RESERVADOS
-        </h6>
       </div>
     </div>
   );
 }
 
-export default Footer;
+export default PiePagina;
