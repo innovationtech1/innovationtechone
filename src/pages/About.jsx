@@ -23,7 +23,7 @@ export default function About() {
         </h3>
       </div>
       <br />
-      <Info />;
+      <Info />
       <br />
       <Footer/>
     </div>

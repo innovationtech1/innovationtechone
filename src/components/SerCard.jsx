@@ -149,4 +149,4 @@ function SerCard() {
   );
 }
 
-export default SerCard
+export default SerCard;
