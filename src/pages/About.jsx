@@ -16,10 +16,9 @@ export default function About() {
         <h3 className="cardAbout">
           Innovation tech fue creado con la idea de poder brindar servicios a
           quedas personas que desconocen o tienen poco conocimiento de como
-          funciona la tegnologia web con a intencion de poder crear sitios
-          web personalizados que generen impacto en los clientes esto y con el proposito
-          de poder brindar un mejor servicio contando con la informacion que los
-          clientes necesita al instante.
+          funciona la tegnologia web con la intencion de crear sitios
+          web personalizados que generen impacto en los clientes y con el proposito
+          de poder brindar un mejor servicio a los clientes proporcionando la informacion al instante dentro de un sitio web como este.
         </h3>
       </div>
       <br />

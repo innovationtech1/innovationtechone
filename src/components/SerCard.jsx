@@ -1,6 +1,8 @@
+import { NavLink } from "react-router-dom";
 import "../App.css";
 import slider1 from "../assets/img/slider1.jpg";
 import slider2 from "../assets/img/slider2.jpg";
+
 import slider3 from "../assets/img/slider3.jpg";
 
 import { FaReact } from "react-icons/fa";
@@ -17,16 +19,19 @@ function SerCard() {
           <img src={slider1} alt="img" />
           <h5 className="cardTitle">Desarrollo Web</h5>
           <h4 className="cardDescription">
-            Diseñamos tu pagina web con los componentes que nececites del
-            catalogo de componentes del "MENU HOME" el desarrollo tiene un costo
-            inicial de $300dlls de anticipo mas los componentes se cobran por
-            separado.
+            Diseñamos tu pagina web con la informacion que necesite tu sitio
+            podemos crearla con los catalogo de componentes de INNOVATIONTECH{" "}
+            <NavLink className="active" to="/innovationtechone/informacion/">
+              <h4>"Informacion""</h4>
+            </NavLink>
+            el desarrollo tiene un costo inicial de $300dlls de anticipo los
+            componentes se cobran por separado.
           </h4>
           <p className="precio">
-            {" "}
+            
             La construcion del sitio tiene un costo inicial de $300 dlls esto
             cubrira el desarrollo , hosting y el dominio los componentes se
-            cobran por separado
+            cobran por separado.
           </p>
         </div>
       </div>
@@ -121,10 +126,13 @@ function SerCard() {
           <img src={slider3} alt="img" />
           <h5 className="cardTitle">Markiting Digital</h5>
           <h4 className="cardDescription">
-            Creamos Campañas publicitarias por medio de GOOGLE ADDS o por medio de las redes sociales la publicidad puede ser un metodo asombroso para llegar a mas clientes
+            Creamos Campañas publicitarias por medio de GOOGLE ADDS o por medio
+            de las redes sociales la publicidad puede ser un metodo asombroso
+            para llegar a mas clientes
           </h4>
           <p className="precio">
-            Las campañas publisitarias estan en desarrollo esperamos contar con este servicio lo mas pronto posible.
+            Las campañas publisitarias estan en desarrollo esperamos contar con
+            este servicio lo mas pronto posible.
           </p>
         </div>
       </div>
@@ -139,7 +147,6 @@ function SerCard() {
           <div>
             <br />
           </div>
-          
         </h3>
 
         <br />
