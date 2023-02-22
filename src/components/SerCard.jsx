@@ -19,22 +19,26 @@ function SerCard() {
           <img src={slider1} alt="img" />
           <h5 className="cardTitle">Desarrollo Web</h5>
           <h4 className="cardDescription">
-            Diseñamos tu pagina web con la informacion que necesite tu sitio
-            podemos crearla con los catalogo de componentes de INNOVATIONTECH{" "}
+            Diseñamos tu pagina web con la informacion que necesite tu sitio web
+            podemos crearla con el catalogo de componentes.
+            <br />
             <NavLink className="active" to="/innovationtechone/informacion/">
-              <h4>"Informacion""</h4>
+            
+              <h4>"Informacion"</h4>
+              
             </NavLink>
             el desarrollo tiene un costo inicial de $300dlls de anticipo los
             componentes se cobran por separado.
           </h4>
-          <p className="precio">
-            
-            La construcion del sitio tiene un costo inicial de $300 dlls esto
-            cubrira el desarrollo , hosting y el dominio los componentes se
-            cobran por separado.
-          </p>
         </div>
       </div>
+      <br />
+      <br />
+      <p className="precio">
+        La construcion del sitio tiene un costo inicial de $300 dlls esto
+        cubrira el desarrollo , hosting y el dominio los componentes se cobran
+        por separado.
+      </p>
       <br />
       <div>
         <div className="textContainer">
@@ -90,12 +94,14 @@ function SerCard() {
             innovation tech utilizamos las herramientas mas avanzadas para poder
             dar el "PERFECT PIXEL" y lograr que tus imagenes se vean geniales.
           </h4>
-          <p className="precio">
-            El diseño creacion de logotipos o imagenes tiene que ser cubierto
-            desde al momneto de ser solicitado tiene costo de $200dlls
-          </p>
         </div>
       </div>
+      <br />
+      <br />
+      <p className="precio">
+        El diseño creacion de logotipos o imagenes tiene que ser cubierto desde
+        al momneto de ser solicitado tiene costo de $200dlls
+      </p>
       <div className="textContainer">
         <h1 className="cardTitle">Especificaciones</h1>
         <br />
@@ -130,12 +136,14 @@ function SerCard() {
             de las redes sociales la publicidad puede ser un metodo asombroso
             para llegar a mas clientes
           </h4>
-          <p className="precio">
-            Las campañas publisitarias estan en desarrollo esperamos contar con
-            este servicio lo mas pronto posible.
-          </p>
         </div>
       </div>
+      <br />
+      <br />
+      <p className="precio">
+        Las campañas publisitarias estan en desarrollo esperamos contar con este
+        servicio lo mas pronto posible.
+      </p>
       <div className="textContainer">
         <h1 className="cardTitle">Especificaciones</h1>
         <br />
