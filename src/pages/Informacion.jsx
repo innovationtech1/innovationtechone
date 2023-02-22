@@ -138,7 +138,7 @@ export default function Informacion() {
         <br />
         <br />
         <h4 className="cardDescription">
-          Incluir API GOOGLEMAPS Geolozalizacion{" "}
+          Incluir API GOOGLEMAPS Geolozalizacion
         </h4>
         <p className="precio">500dlls</p>
       </div>
