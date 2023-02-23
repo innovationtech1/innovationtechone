@@ -237,6 +237,8 @@ body {
     background-image: url("./assets/img/fondo2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    max-width: 600px;
+    align-items: center;
 }
 
 .logo {
@@ -453,7 +455,7 @@ body {
     opacity: 1;
 }
 
-.video {
+.video1 {
     width: 100%;
     height: 250px;
     margin-top: 20px;
@@ -640,4 +642,24 @@ h3 {
     text-align: center;
     color: rgb(255, 255, 255);
     text-shadow: 3px 3px 3px rgb(0, 0, 0), 2px 2px 2px rgb(0, 0, 0), 3px 3px 3px rgb(0, 0, 0), 2px 2px 2px rgb(0, 0, 0), 3px 3px 3px rgb(224, 3, 3), 2px 2px 2px rgb(164, 7, 7), 3px 3px 3px rgb(224, 3, 3), 2px 2px 2px rgb(164, 7, 7);
+}
+
+.video {
+    width: 100%;
+    height: auto;
+}
+
+.play-button {
+    background-color: #010c5d;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.play-button:hover,
+.pause-button:hover,
+.stop-button:hover {
+    background-color: #c01616;
 }

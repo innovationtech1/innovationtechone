@@ -14,6 +14,9 @@ import { useState, useEffect, useRef } from "react";
 import Maps from "../components/Maps";
 import PiePagina from "../components/PiePagina";
 
+
+
+
 export function ContadorBtn() {
   const [contador, setContador] = useState(() => {
     const storedValue = localStorage.getItem("contador");
@@ -35,6 +38,7 @@ export function ContadorBtn() {
 }
 
 export default function Informacion() {
+ 
   return (
     <div>
       <Navegacion />

@@ -11,6 +11,7 @@ import MenuCookies from "../cookies/MenuCookies";
 
 import { useState, useEffect, useRef } from "react";
 import Maps from "../components/Maps";
+import Reproductor from "../components/reproductor";
 
 export function ContadorBtn() {
   const [contador, setContador] = useState(() => {
@@ -59,45 +60,44 @@ function Home() {
     <div className="mainContainer">
       <Navegacion className="" />
       <Slider />
-    
-     
-      
+
       <div className="textContainer">
         <img className="logo" src={logo} alt="logo" />
-       
       </div>
       <div className="textContainer">
         <br></br>
         <ContadorBtn />
         <br></br>
-       
       </div>
-      
-     
-  
+
+      <div className="textContainer">
+        <Reproductor />
+
+        <br />
+      </div>
+      <br />
       <div className="textContainer">
         <iframe
-          className="video"
+          className="video1"
+          
           src="https://www.youtube.com/embed/XKnkh047ieo"
           title="INNOVATIONTECH"
-         
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-         
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
         ></iframe>
-        <br />
-      
       </div>
-      
+
       <div className="textContainer">
         <Maps />
         <br />
-      
       </div>
 
       <MenuCookies />
-      <br /><br />
+      <br />
+      <br />
 
-  <a className="phoneSquare" href="tel:+12108102141">
+      <a className="phoneSquare" href="tel:+12108102141">
         <FaPhoneSquare />
       </a>
       <p className="cardDescription">Call Us</p>
