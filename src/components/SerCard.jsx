@@ -56,7 +56,7 @@ function SerCard() {
             con la cual desarrolla su aplicacion las ventajas de las
             aplicaciones web es que son mas faciles de mantener se pueden
             compartir mas facil a traves de las redes sociales , no necesitan
-            descarga y pueden ser visitadas por cualquiera los 365 dias del año
+            descarga y pueden ser visitadas por cualquiera los 365 dias del año.
           </h3>
           <br />
           <br />
@@ -71,14 +71,14 @@ function SerCard() {
             Utilizamos GitHub como plataforma de almacecnamiento para crear una
             copia de seguridad asi tu pagina siempre estara disponibe para hacer
             actualizaciones "GITHUB" es la plataforma mas grande de
-            almacenamiento del platena.{" "}
+            almacenamiento del platena.
             <div>
               <br />
             </div>{" "}
             Alli viven la mayoria de repositorios es el hosting es donde viven
             la mayoria de los proyectos hoy en dia los cambios y actualizaciones
             tambien tienen un costo dependiendo lo que se quiera actualizar es
-            por eso que tienes que tener en mente como quieres tu pagina web.{" "}
+            por eso que tienes que tener en mente como quieres tu pagina web.
           </h3>
 
           <br />
@@ -113,7 +113,7 @@ function SerCard() {
         <h3 className="cardDescription">
           Desarrollamos imagenes de alta calidad en innovationTECH utilizamos
           Adobe Photoshop Lunacy Figma y otras herramientas de diseño graficas
-          avanzadas para darle color y personalidad a tus imagenes
+          avanzadas para darle color y personalidad a tus imagenes.
           <div>
             <br />
           </div>
@@ -136,14 +136,14 @@ function SerCard() {
           <h4 className="cardDescription">
             Creamos Campañas publicitarias por medio de GOOGLE ADDS o por medio
             de las redes sociales la publicidad puede ser un metodo asombroso
-            para llegar a mas clientes
+            para llegar a mas clientes.
           </h4>
         </div>
       </div>
       <br />
       <br />
       <p className="precio">
-        Las campañas publisitarias estan en desarrollo esperamos contar con este
+        Las campañas publicitarias estan en desarrollo esperamos contar con este
         servicio lo mas pronto posible.
       </p>
       <div className="textContainer">

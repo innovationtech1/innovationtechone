@@ -35,17 +35,17 @@ function AccordionInfo() {
     {
       title: "INFORMACION 1",
       content:
-        "Contenido infromacin 1 ideal para poner descripcion de algun servicio",
+        "Contenido de la informacion 1 ideal para ingresar descripcion de algun servicio",
     },
     {
       title: "INFORMACION 2",
       content:
-        "Contenido del panel 2 ideal para poner descripcion de algun servicio",
+        "Contenido de la informacion 2 ideal para poner descripcion de algun servicio",
     },
     {
       title: "INFORMACION 3",
       content:
-        "Contenido del panel 3 ideal para poner descripcion de algun servicio",
+        "Contenido de la informacion 3 ideal para poner descripcion de algun servicio",
     },
   ];
 
