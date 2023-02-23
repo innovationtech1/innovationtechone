@@ -28,15 +28,10 @@ function PiePagina() {
         <div>Follow Us</div>
 
         <div>
-          <a
-            className="mail"
-            href="mailto:hectordehoyos@inovationtechone.com?subject=Escribe un Asunto del correo"
-          >
-            <h4 className="cardDescription">
-              hectordehoyos@inovationtechone.com
-            </h4>
+          <a href="mailto:hectordehoyos@inovationtechone.com?subject=Escribe un Asunto del correo">
+            <h4 className="mail">hectordehoyos@inovationtechone.com</h4>
           </a>
-          <h6>Press To Send Mail</h6>
+          <h5 className="mail">Press To Send Mail</h5>
         </div>
       </div>
     </div>

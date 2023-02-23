@@ -2,6 +2,8 @@
 import "../App.css";
 import logo from "../assets/img/logo.png";
 
+import { NavLink } from "react-router-dom";
+
 
 import Slider from "../components/Slider";
 import Navegacion from "../components/Navegacion";
@@ -13,6 +15,10 @@ import NavMuestra from "../components/NavMuestra";
 import { useState, useEffect, useRef } from "react";
 import Maps from "../components/Maps";
 import PiePagina from "../components/PiePagina";
+import AcordionInfo from "../components/Acordion";
+
+import SliderComponent from "../components/SliderDeImagenes";
+
 
 
 
@@ -49,7 +55,7 @@ export default function Informacion() {
         <br />
         <br />
         <h3 className="cardTitle">Catalogo de Componentes</h3>
-        <p className="cardDescription">Creando Tecnologia</p>
+        <p className="cardTitle">Creando Tecnologia</p>
         <br />
         <br />
         <h4 className="cardDescription">Titulo y subtitulo</h4>
@@ -59,7 +65,7 @@ export default function Informacion() {
         <br />
         <br />
         <h3 className="cardTitle">Catalogo de Componentes</h3>
-        <p className="cardDescription">Creando Tecnologia</p>
+        <p className="cardTitle">Creando Tecnologia</p>
         <br />
 
         <p className="cardDescription">
@@ -137,6 +143,17 @@ export default function Informacion() {
         </h4>
         <p className="precio">500dlls</p>
       </div>
+      <br />
+
+      <div className="textContainer">
+        <AcordionInfo />
+        <br />
+        <h4 className="cardDescription">Acordion desplegable para servicios</h4>
+        <p className="precio">200dlls</p>
+        <br />
+      </div>
+      <br />
+
       <div className="textContainer">
         <Maps />
         <br />
@@ -145,6 +162,26 @@ export default function Informacion() {
           Incluir API GOOGLEMAPS Geolozalizacion
         </h4>
         <p className="precio">500dlls</p>
+      </div>
+
+      <div className="textContainer">
+        <br />
+        <SliderComponent />
+        <br />
+        <h4 className="cardDescription">Slider de Imagenes</h4>
+        <p className="precio">500dlls</p>
+      </div>
+      <div className="btnContainer ">
+        <button>
+          <NavLink className="likesBtn" to="/innovationtechone/servicios/">
+            Previos
+          </NavLink>
+        </button>
+        <button>
+          <NavLink className="likesBtn" to="/innovationtechone/about/">
+            Next
+          </NavLink>
+        </button>
       </div>
 
       <Footer />

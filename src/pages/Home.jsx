@@ -1,17 +1,17 @@
 import "../App.css";
 import logo from "../assets/img/logo.png";
 import { FaPhoneSquare } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
-import Slider from "../components/Slider";
 import Navegacion from "../components/Navegacion";
 import Footer from "../components/footer";
 
 import MenuCookies from "../cookies/MenuCookies";
 
-
 import { useState, useEffect, useRef } from "react";
 import Maps from "../components/Maps";
 import Reproductor from "../components/reproductor";
+import SliderComponent from "../components/SliderDeImagenes";
 
 export function ContadorBtn() {
   const [contador, setContador] = useState(() => {
@@ -59,8 +59,7 @@ function Home() {
   return (
     <div className="mainContainer">
       <Navegacion className="" />
-      <Slider />
-
+      <SliderComponent />
       <div className="textContainer">
         <img className="logo" src={logo} alt="logo" />
       </div>
@@ -79,7 +78,6 @@ function Home() {
       <div className="textContainer">
         <iframe
           className="video1"
-          
           src="https://www.youtube.com/embed/XKnkh047ieo"
           title="INNOVATIONTECH"
           frameborder="0"
@@ -100,7 +98,20 @@ function Home() {
       <a className="phoneSquare" href="tel:+12108102141">
         <FaPhoneSquare />
       </a>
-      <p className="cardDescription">Call Us</p>
+      <p className="cardTitle">Call Us</p>
+
+      <div className=" btnContainer">
+        <button>
+          <NavLink className="likesBtn" to="/innovationtechone/about/">
+            PREVIEW
+          </NavLink>
+        </button>
+        <button>
+          <NavLink className="likesBtn" to="/innovationtechone/servicios/">
+            Next
+          </NavLink>
+        </button>
+      </div>
       <Footer />
     </div>
   );

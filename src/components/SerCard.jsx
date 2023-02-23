@@ -19,12 +19,14 @@ function SerCard() {
           <img src={slider1} alt="img" />
           <h5 className="cardTitle">Desarrollo Web</h5>
           <h4 className="cardDescription">
-            Diseñamos tu pagina web con la informacion que necesite tu sitio web
-            podemos crearla con el catalogo de componentes.
+            Diseñamos tu sitio web con la informacion que necesites
+            basada con el catalogo de componentes.
             <br />
             <NavLink className="active" to="/innovationtechone/informacion/">
+              <br />
             
               <h4>"Informacion"</h4>
+              <br />
               
             </NavLink>
             el desarrollo tiene un costo inicial de $300dlls de anticipo los
