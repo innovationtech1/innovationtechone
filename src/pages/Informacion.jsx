@@ -48,7 +48,8 @@ export default function Informacion() {
   return (
     <div>
       <Navegacion />
-      <h3 className="pageTitle">Informacion</h3>
+      <br></br>
+      <h1 className="pageTitle">Informacion</h1>
       <br />
       <br />
       <div className="textContainer">
