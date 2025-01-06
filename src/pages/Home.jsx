@@ -95,7 +95,7 @@ function Home() {
       <br />
       <br />
 
-      <a className="phoneSquare" href="tel:+12108102141">
+      <a className="phoneSquare" href="tel:+12108877498">
         <FaPhoneSquare />
       </a>
       <p className="cardTitle">Call Us</p>
